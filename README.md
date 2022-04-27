@@ -87,7 +87,7 @@ Mesmo que haja essa variabilidade no treinamento, uma vez terminado o treinament
 
 ### Passo a passo:
 
-#### Passo 1: Acesso esse [link para o Teachable Machine](https://teachablemachine.withgoogle.com/train/image) em uma nova aba
+#### Passo 1: Clique com o botão direito e acesse esse [link](https://teachablemachine.withgoogle.com/train/image) em uma nova aba para o Teachable Machine
 
 Você deve ver este site:
 
