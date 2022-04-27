@@ -1,6 +1,4 @@
-# JPR2022
-
-### Hands On Inteligência Artificial em Radiologia
+# JPR 2022 Hands On Inteligência Artificial em Radiologia JPR 2022
 
 Este é o passo a passo para o curso Hands On de Inteligência Artificial em Radiologia na JPR 2022.
 
