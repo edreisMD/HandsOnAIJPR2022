@@ -33,7 +33,7 @@ Inteligência artificial (IA) se referem de forma genérica a programas de compu
 #### O que é uma Rede Neural Convolucional (CNN)?
 As CNNs são modelos inspirados na biologia do córtex visual dos mamíferos. D. H. Hubel e T. N. Wiesel propuseram uma explicação para a maneira como os mamíferos percebem visualmente o mundo ao seu redor usando uma arquitetura em camadas de neurônios no cérebro, e isso, por sua vez, inspirou os engenheiros a tentar desenvolver mecanismos semelhantes de reconhecimento de padrões na visão computacional.
 
-<img src="https://github.com/edreisMD/handsonfigs/blob/master/visualcortex2.jpg" width="400">
+<img src="https://github.com/edreisMD/handsonfigs/blob/master/visualcortex2.jpg" width="500">
 
 Fonte: https://colocar
 
@@ -49,19 +49,19 @@ Através de uma matriz de números estrategicamente orientados.
 
 Considere cada imagem como uma matriz em que o valor de cada pixel corresponde a um número que determina o tom de cinza da imagem
 
-![8Pixels](https://github.com/edreisMD/handsonfigs/blob/master/8_digits.gif)
+<img src="https://github.com/edreisMD/handsonfigs/blob/master/8_digits.gif" width="500">
 
 Fonte: https://colocar
 
 Portanto, para enxergar os contornos de uma imagem nosso algoritmo vai tentar criar filtros que representem estes contornos em números, como no exemplo abaixo.
 
-![4Conv](https://github.com/edreisMD/handsonfigs/blob/master/Screen-Shot-2017-07-26-at-6.13.41-PM.png)
+<img src="https://github.com/edreisMD/handsonfigs/blob/master/Screen-Shot-2017-07-26-at-6.13.41-PM.png" width="500">
 
 Fonte: https://colocar
 
 Veja como esses filtros numéricos  vão percorrer toda a imagem para enxergar os contornos:
 
-![ConvRun](https://github.com/edreisMD/handsonfigs/blob/master/ConvRun.gif)
+<img src="https://github.com/edreisMD/handsonfigs/blob/master/ConvRun.gif" width="500">
 
 Fonte: https://colocar
 
@@ -71,13 +71,13 @@ E repetiremos essa operação várias vezes para nossa rede enxergar caracterís
 
 Treinar uma rede neural consiste basicamente em tentar achar a menor diferença entre o que o algoritmo prediz e a resposta correta (ou ground truth), esta diferença é chamada de perda (loss), quanto menor a perda (loss), mais o seu algoritmo está acertando, consequentemente maior será a acurácia (acc).
 
-![NN](https://i1.wp.com/francescolelli.info/wp-content/uploads/2019/05/NeuralNetworks-input-layer-hidden-layer-output-layer.png?resize=1024%2C670&ssl=1)
+<img src="https://i1.wp.com/francescolelli.info/wp-content/uploads/2019/05/NeuralNetworks-input-layer-hidden-layer-output-layer.png?resize=1024%2C670&ssl=1" width="500">
 
 Fonte: https://francescolelli.info/tutorial/neural-networks-a-collection-of-youtube-videos-for-learning-the-basics/
 
 Veja na animação abaixo que a rede neural está buscando o ponto de menor perda (loss) (vermelho), mas para chegar lá ela deve tentar vários caminhos diferentes de forma aleatória, por isso precisamos repetir o processo várias vezes, até chegar no ponto mais baixo. Esse processo se chama Gradient Descent.
 
-![Gradient Descent](https://github.com/kitamura-felipe/RSNASpotlight2021/blob/main/images/graddescent01.gif)
+<img src="https://github.com/kitamura-felipe/RSNASpotlight2021/blob/main/images/graddescent01.gif" width="500">
 
 Reference: https://towardsdatascience.com/a-visual-explanation-of-gradient-descent-methods-momentum-adagrad-rmsprop-adam-f898b102325c
 
