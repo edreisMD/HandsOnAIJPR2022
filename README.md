@@ -55,13 +55,13 @@ Fonte: https://colocar
 
 Portanto, para enxergar os contornos de uma imagem nosso algoritmo vai tentar criar filtros que representem estes contornos em números, como no exemplo abaixo.
 
-<img src="https://github.com/edreisMD/handsonfigs/blob/master/Screen-Shot-2017-07-26-at-6.13.41-PM.png" width="500">
+<img src="https://github.com/edreisMD/handsonfigs/blob/master/Screen-Shot-2017-07-26-at-6.13.41-PM.png" width="400">
 
 Fonte: https://colocar
 
 Veja como esses filtros numéricos  vão percorrer toda a imagem para enxergar os contornos:
 
-<img src="https://github.com/edreisMD/handsonfigs/blob/master/ConvRun.gif" width="500">
+<img src="https://github.com/edreisMD/handsonfigs/blob/master/ConvRun.gif" width="300">
 
 Fonte: https://colocar
 
