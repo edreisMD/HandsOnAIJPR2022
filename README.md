@@ -174,3 +174,9 @@ Neste experimento nós também estamos treinando um modelo multiclasse com 3 cla
 
 Legenda: Normal / Intraparenquimatoso / Subdural
 
+
+#### Parabéns você treinou a sua rede neural!
+
+<img src="https://github.com/edreisMD/handsonfigs/blob/master/happy_coder.gif">
+
+Fonte: https://giphy.com 
