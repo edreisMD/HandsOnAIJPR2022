@@ -128,6 +128,7 @@ Observe que a acurácia não é tão boa quanto se pode esperar. Isto se deve ao
 Pegue uma imagem de "hemorragia intracraniana" ou "TC de cranio normal" no google e salve no seu computador, em seguida na aba "Preview", escolha "Input -> File" e arraste a imagem que você salvou no seu computador para esta aba.
 
 A sua tela deve estar parecida com esta:
+
 <img src="https://github.com/edreisMD/HandsOnAIJPR2022/blob/main/Imagens/Passo8.png" width="700">
 
 Veja como a rede se sai ao longo dos experimentos. Ela terá diferentes performances, devendo se sair melhor no experimento 3 em que o nosso *dataset* tem um número maior de imagens. Mas fique atento pois cada experimento aboradará um conceito diferente!
