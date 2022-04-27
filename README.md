@@ -1,37 +1,91 @@
-# RSNA Spotlight 2021
+# JPR2022
 
-### From Theory to Practice: Live Demonstration 
+### Hands On Inteligência Artificial em Radiologia
 
-This is a guide for the session "From Theory to Practice: Live Demonstration" in the *RSNA Spotlight Course 2021 AI Implementation: Building Expertise and Influence*.
+Este é o passo a passo para o curso Hands On de Inteligência Artificial em Radiologia na JPR 2022.
 
-### Objective:
+### Principais objetivos:
 
-By the end of this activity, you will be able to:
-
-* Understand the overall process to train a deep learning model
-* Learn basic concepts on how to assess model generalizability and performance
-
+* Conhecer os conceitos introdutórios de Inteligência Artificial
+* Conhecer como avaliar a performance e capacidade de generalização de um algoritmo de Inteligência Artificial 
 
 ### Acknowledgements
 
-This session used a subset of the 2019 RSNA Intracranial Hemorrhage Dataset. The paper describing the construction of the dataset can be found in this link: [Flanders A.E., Prevedello L.M., Shih G. et al. Construction of a Machine Learning Dataset through Collaboration: The RSNA 2019 Brain CT Hemorrhage Challenge](https://pubs.rsna.org/doi/10.1148/ryai.2020190211)
+Esta atividade é uma adaptação do "RSNA Spotlight Course 2021 AI Implementation: Building Expertise and Influence''. Session From Theory to Practice: Live Demonstration", realizada por Luciano M. Prevedello e Felipe C. Kitamura.
 
-### Instructors for this session
+Os dados utilizados são provenientes do 2019 RSNA Intracranial Hemorrhage Dataset. O artigo que descreve a construção deste dataset pode ser encontrado neste link: [Flanders A.E., Prevedello L.M., Shih G. et al. Construction of a Machine Learning Dataset through Collaboration: The RSNA 2019 Brain CT Hemorrhage Challenge](https://pubs.rsna.org/doi/10.1148/ryai.2020190211)
 
-* Luciano M. Prevedello, MD, MPH
+### Professores
+
 * Felipe C. Kitamura, MD, MSc, PhD
+* Eduardo P. Reis, MD
 
-### Before we start running our experiments, let's remember an important concept: gradient descent!
+### Monitores
+
+* Victor V. M. Menezes, MD
+* ABC
+
+### Antes de começarmos, vamos lembrar alguns conceitos:
+
+#### O que é Inteligência Artificial?
+Inteligência artificial (IA) se referem de forma genérica a programas de computador que simulam funções cognitivas humanas. A principal técnica de IA para o processamento de imagens é a Rede Neural Convolucional.
+
+#### O que é uma Rede Neural Convolucional (CNN)?
+As CNNs são modelos inspirados na biologia do córtex visual dos mamíferos. D. H. Hubel e T. N. Wiesel propuseram uma explicação para a maneira como os mamíferos percebem visualmente o mundo ao seu redor usando uma arquitetura em camadas de neurônios no cérebro, e isso, por sua vez, inspirou os engenheiros a tentar desenvolver mecanismos semelhantes de reconhecimento de padrões na visão computacional.
+
+![Visual Cortex](https://github.com/edreisMD/handsonfigs/blob/master/visualcortex2.jpg)
+
+Fonte: https://colocar
+
+
+#### Construindo a arquitetura da Rede Neural Convolucional
+#### O que é uma convolução?
+
+Uma convolução é uma operação matemática que consiste em multiplicar uma matriz (a nossa imagem) por um filtro (matriz de pesos)
+
+#### Como o computador enxerga uma imagem?
+
+Através de uma matriz de números estrategicamente orientados.
+
+Considere cada imagem como uma matriz em que o valor de cada pixel corresponde a um número que determina o tom de cinza da imagem
+
+![8Pixels](https://github.com/edreisMD/handsonfigs/blob/master/8_digits.gif)
+
+Fonte: https://colocar
+
+Portanto, para enxergar os contornos de uma imagem nosso algoritmo vai tentar criar filtros que representem estes contornos em números, como no exemplo abaixo.
+
+![4Conv](https://github.com/edreisMD/handsonfigs/blob/master/Screen-Shot-2017-07-26-at-6.13.41-PM.png)
+
+Fonte: https://colocar
+
+Veja como esses filtros numéricos  vão percorrer toda a imagem para enxergar os contornos:
+
+![ConvRun](https://github.com/edreisMD/handsonfigs/blob/master/ConvRun.gif)
+
+Fonte: https://colocar
+
+E repetiremos essa operação várias vezes para nossa rede enxergar características cada vez mais complexas, gerando filtros de contornos.
+
+#### Depois de definida a arquitetura vamos treinar nossa rede neural.
+
+Treinar uma rede neural consiste basicamente em tentar achar a menor diferença entre o que o algoritmo prediz e a resposta correta (ou ground truth), esta diferença é chamada de perda (loss), quanto menor a perda (loss), mais o seu algoritmo está acertando, consequentemente maior será a acurácia (acc).
+
+![NN](https://i1.wp.com/francescolelli.info/wp-content/uploads/2019/05/NeuralNetworks-input-layer-hidden-layer-output-layer.png?resize=1024%2C670&ssl=1)
+
+Fonte: https://francescolelli.info/tutorial/neural-networks-a-collection-of-youtube-videos-for-learning-the-basics/
+
+Veja na animação abaixo que a rede neural está buscando o ponto de menor perda (loss) (vermelho), mas para chegar lá ela deve tentar vários caminhos diferentes de forma aleatória, por isso precisamos repetir o processo várias vezes, até chegar no ponto mais baixo. Esse processo se chama Gradient Descent.
 
 ![Gradient Descent](https://github.com/kitamura-felipe/RSNASpotlight2021/blob/main/images/graddescent01.gif)
 
 Reference: https://towardsdatascience.com/a-visual-explanation-of-gradient-descent-methods-momentum-adagrad-rmsprop-adam-f898b102325c
 
-The path our algorithm will go through in the loss landscape during the learning process is dependent on several factors. The learning rate is one of them, as well as the order we present our images to the model during the training process. The initial weights of the model determine the starting point in the loss landscape. These are some of the many reasons why the training process can be different if rerun in other machines. It also means you could get different results than the ones shown here if you run these experiments in your computer. 
+Os pesos iniciais do modelo determinam o ponto inicial do "espaço" da loss. Essa é uma das razões porque o processo de treinamento pode dar resultados diferentes para cada vez que você treinar. Isso significa também que você pode ter diferentes resultados do que os mostrados abaixo. Não se preocupe.
 
-Although there is this variability in the training phase, after we finish training you should expect to get always the same results for a given test set.
+Mesmo que haja essa variabilidade no treinamento, uma vez terminado o treinamento e congelados os pesos você sempre obterá o mesmo resultado ao avaliar uma mesma imagem, ou um conjunto de teste.
 
-### Instructions:
+### Passo a passo:
 
 #### Step 1: Download the [file for Experiment 1 here](https://github.com/kitamura-felipe/RSNASpotlight2021/blob/main/experiments/experiment1.tm?raw=true) and save it somewhere you can find it later.
 
