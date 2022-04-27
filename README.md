@@ -9,6 +9,8 @@ Este é o passo a passo para o curso Hands On de Inteligência Artificial em Rad
 
 ### Acknowledgements
 
+This lecture was inspired in Luciano, Errol e Tara presentation at ______ (RSNA 2021?)
+
 Esta atividade é baseada na "RSNA Spotlight Course 2021 AI Implementation: Building Expertise and Influence''. Session From Theory to Practice: Live Demonstration", realizada por Luciano M. Prevedello e Felipe C. Kitamura.
 
 Os dados utilizados são provenientes do 2019 RSNA Intracranial Hemorrhage Dataset. O artigo que descreve a construção deste dataset pode ser encontrado neste link: [Flanders A.E., Prevedello L.M., Shih G. et al. Construction of a Machine Learning Dataset through Collaboration: The RSNA 2019 Brain CT Hemorrhage Challenge](https://pubs.rsna.org/doi/10.1148/ryai.2020190211)
@@ -21,7 +23,7 @@ Os dados utilizados são provenientes do 2019 RSNA Intracranial Hemorrhage Datas
 ### Monitores
 
 * Victor V. M. Menezes, MD
-* ABC
+* Augusto S. Serpa, MD
 
 ### Antes de começarmos, vamos lembrar alguns conceitos:
 
