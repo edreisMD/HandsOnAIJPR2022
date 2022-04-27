@@ -61,7 +61,7 @@ Fonte: https://colocar
 
 Veja como esses filtros numéricos  vão percorrer toda a imagem para enxergar os contornos:
 
-<img src="https://github.com/edreisMD/handsonfigs/blob/master/ConvRun.gif" width="300">
+<img src="https://github.com/edreisMD/handsonfigs/blob/master/ConvRun.gif" width="400">
 
 Fonte: https://colocar
 
