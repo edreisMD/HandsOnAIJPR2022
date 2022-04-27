@@ -1,6 +1,4 @@
-# JPR2022
-
-### Hands On Inteligência Artificial em Radiologia
+# Hands On Inteligência Artificial em Radiologia - JPR 2022
 
 Este é o passo a passo para o curso Hands On de Inteligência Artificial em Radiologia na JPR 2022.
 
@@ -11,7 +9,9 @@ Este é o passo a passo para o curso Hands On de Inteligência Artificial em Rad
 
 ### Acknowledgements
 
-Esta atividade é uma adaptação do "RSNA Spotlight Course 2021 AI Implementation: Building Expertise and Influence''. Session From Theory to Practice: Live Demonstration", realizada por Luciano M. Prevedello e Felipe C. Kitamura.
+This lecture was inspired in Luciano, Errol e Tara presentation at ______ (RSNA 2021?)
+
+Esta atividade é baseada na "RSNA Spotlight Course 2021 AI Implementation: Building Expertise and Influence''. Session From Theory to Practice: Live Demonstration", realizada por Luciano M. Prevedello e Felipe C. Kitamura.
 
 Os dados utilizados são provenientes do 2019 RSNA Intracranial Hemorrhage Dataset. O artigo que descreve a construção deste dataset pode ser encontrado neste link: [Flanders A.E., Prevedello L.M., Shih G. et al. Construction of a Machine Learning Dataset through Collaboration: The RSNA 2019 Brain CT Hemorrhage Challenge](https://pubs.rsna.org/doi/10.1148/ryai.2020190211)
 
@@ -23,7 +23,7 @@ Os dados utilizados são provenientes do 2019 RSNA Intracranial Hemorrhage Datas
 ### Monitores
 
 * Victor V. M. Menezes, MD
-* ABC
+* Augusto S. Serpa, MD
 
 ### Antes de começarmos, vamos lembrar alguns conceitos:
 
@@ -79,7 +79,7 @@ Veja na animação abaixo que a rede neural está buscando o ponto de menor perd
 
 <img src="https://github.com/kitamura-felipe/RSNASpotlight2021/blob/main/images/graddescent01.gif" width="500">
 
-Reference: https://towardsdatascience.com/a-visual-explanation-of-gradient-descent-methods-momentum-adagrad-rmsprop-adam-f898b102325c
+Fonte: https://towardsdatascience.com/a-visual-explanation-of-gradient-descent-methods-momentum-adagrad-rmsprop-adam-f898b102325c
 
 Os pesos iniciais do modelo determinam o ponto inicial do "espaço" da loss. Essa é uma das razões porque o processo de treinamento pode dar resultados diferentes para cada vez que você treinar. Isso significa também que você pode ter diferentes resultados do que os mostrados abaixo. Não se preocupe.
 
@@ -87,61 +87,100 @@ Mesmo que haja essa variabilidade no treinamento, uma vez terminado o treinament
 
 ### Passo a passo:
 
-#### Step 1: Download the [file for Experiment 1 here](https://github.com/kitamura-felipe/RSNASpotlight2021/blob/main/experiments/experiment1.tm?raw=true) and save it somewhere you can find it later.
+#### Passo 1: Clique com o botão direito e acesse esse [link](https://teachablemachine.withgoogle.com/train/image) em uma nova aba para o Teachable Machine
 
-#### Step 2: Right click on the [teachable machine link here](https://teachablemachine.withgoogle.com/train/image) and choose "Open in a new tab" (or hold CTRL key + left mouse click)
+Você deve ver este site:
 
-You should see this website:
+<img src="https://github.com/edreisMD/HandsOnAIJPR2022/blob/main/Imagens/Passo1.png" width="700">
 
-![Screenshot](https://github.com/kitamura-felipe/RSNASpotlight2021/blob/main/images/image04.png)
+#### Passo 2: Baixe o [arquivo do Experimento 1](https://github.com/edreisMD/HandsOnAIJPR2022/blob/main/Experimentos/experiment1.tm) em um local que será fácil para encontrar depois
 
-#### Step 3: Click on the left upper corner to open the menu and then click on "Open project from file" as below:
+#### Passo 3: Clique em "Teachable Machine" no canto superior esquerdo e depois em "Open project from file", como abaixo:
 
-![Screenshot](https://github.com/kitamura-felipe/RSNASpotlight2021/blob/main/images/image05.png)
+<img src="https://github.com/edreisMD/HandsOnAIJPR2022/blob/main/Imagens/Passo3.png" width="700">
 
-#### Step 4: Upload the file from Experiment 1 (Step 1) and wait for it to load.
+#### Passo 4: Faça o upload do arquivo 1 e aguarde ele ser carregado.
 
-You should see multiple head CT images loaded onto the platform organized by presence or absence of hemorrhage:
+Você deve ver múltiplas imagens de TC de crânio carregadas na plataforma e divididas pela presença ou ausência de hemorragia:
 
-![Screenshot](https://github.com/kitamura-felipe/RSNASpotlight2021/blob/main/images/image06.png)
+<img src="https://github.com/edreisMD/HandsOnAIJPR2022/blob/main/Imagens/Passo4.png" width="700">
 
-#### Step 5: Click on train and wait for it to finish. It may take a while for the training to start.
+#### Passo 5: Clique em train model e aguarde finalizar, sem sair da aba. Pode levar um tempinho…
 
-After training, experiment 1 should look like this:
+<img src="https://github.com/edreisMD/HandsOnAIJPR2022/blob/main/Imagens/Passo5.png" width="700">
 
-![Screenshot](https://github.com/kitamura-felipe/RSNASpotlight2021/blob/main/images/experiment1.png)
+#### Passo 6: Na mini-aba do treinamento, selecione "Advanced" e depois "Under the hood"
 
-Notice that the accuracy is not as good as one may expect from a machine learning model. This is due to the limited number of cases in this experiment (30 normal + 30 hemorrhage)
+Com isso, deve surgir uma nova mini-aba lateral e a sua tela deve estar parecida com esta:
+
+<img src="https://github.com/edreisMD/HandsOnAIJPR2022/blob/main/Imagens/Passo6.png" width="700">
+
+#### Passo 7: Na nova mini-aba lateral, clique em "Calculate Confusion Matrix"
+
+A sua tela deve estar parecida com esta:
+
+<img src="https://github.com/edreisMD/HandsOnAIJPR2022/blob/main/Imagens/Passo7.png" width="700">
+
+Observe que a acurácia não é tão boa quanto se pode esperar. Isto se deve ao fato do baixo número de casos no experimento (30 normais + 30 com hemorragia)
+
+#### Passo 8: Vamos ver como a rede se sai em uma imagem 
+
+Pegue uma imagem de "hemorragia intracraniana" ou "TC de cranio normal" no google e salve no seu computador, em seguida na aba "Preview", escolha "Input -> File" e arraste a imagem que você salvou no seu computador para esta aba.
+
+Veja como a rede se sai ao longo dos experimentos. Ela terá diferentes performances, devendo se sair melhor no experimento 3 em que o nosso *dataset* tem um número maior de imagens. Mas fique atento pois cada experimento aboradará um conceito diferente!
+
+#### Passo 8: Repita os passos 3 a 8 utilizando agora o [arquivo do Experimento 2](https://github.com/edreisMD/HandsOnAIJPR2022/blob/main/Experimentos/experiment2.tm)
+
+A sua tela deve estar parecida com esta:
+
+<img src="https://github.com/edreisMD/HandsOnAIJPR2022/blob/main/Imagens/Passo8.png" width="700">
+
+Observe que a acurácia parece ter aumentado significativamente. No entanto, olhando de perto é possível notar que a matriz de confusão mostra que a maioria dos casos “positivos” foram classificados erroneamente como “negativos”. Isso se deve ao alto desbalanceamento nesse experimento (1000 normais + 30 com hemorragia).
 
 
-#### Step 6: Repeat steps 3 to 5, but now load the [file for Experiment 2 here](https://github.com/kitamura-felipe/RSNASpotlight2021/blob/main/experiments/experiment2.tm?raw=true)
+#### Lidando com o desbalanceamento
 
-After training, experiment 2 should look like this:
+Modelos que possuem um desbalanceamento das classes (ex: mais tomografias de crânio normais que com hemorragia) tendem a ter decisões sempre a favor da classe majoritária.
 
-![Screenshot](https://github.com/kitamura-felipe/RSNASpotlight2021/blob/main/images/experiment2.png)
+Oversampling e Undersampling são técnicas para criar ou remover dados artificialmente para balancear as classes.
+* Oversampling: Aumentar a amostra da classe minoritária.
+* Undersampling: Reduzir a amostra da classe majoritária.
 
-Notice that the accuracy seems to have improved significantly. However, a closer look at the confusion matrix shows that most of the positive cases have been misclassified as negative. This is due to the heavy class imbalance thas was simulated in this experiment (1000 normal + 30 hemorrhage).
+<img src="https://github.com/edreisMD/HandsOnAIJPR2022/blob/main/Imagens/over_under_sampling.png" width="500">
 
-#### Step 7: Repeat steps 3 to 5, but now load the [file for Experiment 3 here](https://github.com/kitamura-felipe/RSNASpotlight2021/blob/main/experiments/experiment3.tm?raw=true)
+Fonte: https://towardsdatascience.com/a-visual-explanation-of-gradient-descent-methods-momentum-adagrad-rmsprop-adam-f898b102325c
 
-After training, experiment 3 should look like this:
+#### Passo 9: Repita os passos 3 a 8 utilizando agora o [arquivo Experimento 3](https://github.com/edreisMD/HandsOnAIJPR2022/blob/main/Experimentos/experiment3.tm)
 
-![Screenshot](https://github.com/kitamura-felipe/RSNASpotlight2021/blob/main/images/experiment3b.png)
+A sua tela deve estar parecida com esta:
 
-Notice that the accuracy is lower than in the last experiment. However, a closer look at the confusion matrix shows that it is indeed correctly classifying most of the positive cases, although still nor perfect. In this experiment our dataset was balanced (1000 normal + 1000 hemorrhage).
+<img src="https://github.com/edreisMD/HandsOnAIJPR2022/blob/main/Imagens/Passo9.png" width="700">
 
-#### Step 8: Repeat steps 3 to 5, but now load the [file for Experiment 4 here](https://github.com/kitamura-felipe/RSNASpotlight2021/blob/main/experiments/experiment4.tm?raw=true)
+Observe que a acurácia é menor do que no último experimento. No entanto, a matriz de confusão demonstra que a maioria dos casos “positivos” passaram a ser classificados corretamente, apesar de não estar perfeito. Neste experimento nosso dataset foi balanceado (1000 normais + 1000 com hemorragia)
 
-After training, experiment 4 should look like this:
+#### Passo 10: Repita os passos 3 a 8 utilizando agora o [arquivo Experimento 4](https://github.com/edreisMD/HandsOnAIJPR2022/blob/main/Experimentos/experiment4.tm)
 
-![Screenshot](https://github.com/kitamura-felipe/RSNASpotlight2021/blob/main/images/experiment6.png)
+A sua tela deve estar parecida com esta:
 
-In this experiment we are training a multiclass model to predict only 1 of 3 classes (normal, subdural, intraparenchymal). Because of the limited number of images in each class (80) to keep it balanced, the accuracy is not impressive. Now let's compare it to experiment 5 (next step).
+<img src="https://github.com/edreisMD/HandsOnAIJPR2022/blob/main/Imagens/Passo10.png" width="700">
 
-#### Step 9: Repeat steps 3 to 5, but now load the [file for Experiment 5 here](https://github.com/kitamura-felipe/RSNASpotlight2021/blob/main/experiments/experiment5.tm?raw=true)
+Neste experimento nós estamos treinando um modelo multiclasse para classificar em apenas 1 de 3 classes possíveis (normal, subdural, intraparenquimatoso). Devido ao número limitado de imagens de cada classe (80) para manter o balanceamento, a acurácia não foi satisfatória
 
-After training, experiment 5 should look like this:
+#### Passo 11: Repita os passos 3 a 8 utilizando agora o [arquivo Experimento 5](https://github.com/edreisMD/HandsOnAIJPR2022/blob/main/Experimentos/experiment5.tm)
 
-![Screenshot](https://github.com/kitamura-felipe/RSNASpotlight2021/blob/main/images/experiment7.png)
+A sua tela deve estar parecida com esta:
 
-In this experiment we are also training a multiclass model with 3 classes (normal, subdural, intraparenchymal). Because of the preprocessing step done to color-code the bleedings, the model is able to achieve a significantly higher accuracy. This color-coding was done by assigning the red color to voxels that where within a certaing range of Hounsfield Units. Although this simple thresholding rule is not perfectly accurate to identify bleedings, it helps the model achieve a better result.
+<img src="https://github.com/edreisMD/HandsOnAIJPR2022/blob/main/Imagens/Passo11.png" width="700">
+
+Neste experimento nós também estamos treinando um modelo multiclasse com 3 classes (normal, subdural e intraparenquimatoso). Devido ao pré-processamento realizado para color-code os sangramentos, o modelo foi capaz de obter uma acurácia significativamente maior. Este color-code foi realizado determinando a cor vermelha aos voxels que estavam em uma determinada janela de Unidades Hounsfield. Apesar de esse simples ajuste não tornar o modelo perfeito, ele o ajuda a obter um resultado significativamente melhor.
+
+<img src="https://github.com/edreisMD/HandsOnAIJPR2022/blob/main/Imagens/hemorragia_cor.png" width="400">
+
+Legenda: Normal / Intraparenquimatoso / Subdural
+
+
+#### Parabéns você treinou a sua rede neural!
+
+<img src="https://github.com/edreisMD/handsonfigs/blob/master/happy_coder.gif">
+
+Fonte: https://giphy.com 
