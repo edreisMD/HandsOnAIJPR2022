@@ -123,7 +123,7 @@ A sua tela deve estar parecida com esta:
 
 Observe que a acurácia não é tão boa quanto se pode esperar. Isto se deve ao fato do baixo número de casos no experimento (30 normais + 30 com hemorragia)
 
-#### Passo 8: Repita os passos 3 a 7 utilizando agora o [file for Experiment 2 here](https://github.com/edreisMD/HandsOnAIJPR2022/blob/main/Experimentos/experiment2.tm)
+#### Passo 8: Repita os passos 3 a 7 utilizando agora o [arquivo do Experimento 2](https://github.com/edreisMD/HandsOnAIJPR2022/blob/main/Experimentos/experiment2.tm)
 
 A sua tela deve estar parecida com esta:
 
