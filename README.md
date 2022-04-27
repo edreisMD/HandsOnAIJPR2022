@@ -134,18 +134,18 @@ A sua tela deve estar parecida com esta:
 Observe que a acurácia parece ter aumentado significativamente. No entanto, olhando de perto é possível notar que a matriz de confusão mostra que a maioria dos casos “positivos” foram classificados erroneamente como “negativos”. Isso se deve ao alto desbalanceamento nesse experimento (1000 normais + 30 com hemorragia).
 
 
-##### Lidando com o desbalanceamento
+| #### Lidando com o desbalanceamento |
 
-Modelos que possuem um desbalanceamento das classes (ex: mais tomografias de crânio normais que com hemorragia) tendem a ter decisões sempre a favor da classe majoritária.
+| Modelos que possuem um desbalanceamento das classes (ex: mais tomografias de crânio normais que com hemorragia) tendem a ter decisões sempre a favor da classe majoritária. |
 
-Oversampling e Undersampling são técnicas para criar ou remover dados artificialmente para balancear as classes.
-* Oversampling: Aumentar a amostra da classe minoritária.
-* Undersampling: Reduzir a amostra da classe majoritária.
+| Oversampling e Undersampling são técnicas para criar ou remover dados artificialmente para balancear as classes. |
+| * Oversampling: Aumentar a amostra da classe minoritária. |
+| * Undersampling: Reduzir a amostra da classe majoritária. |
 
-<img src="https://github.com/edreisMD/HandsOnAIJPR2022/blob/main/Imagens/over_under_sampling.png" width="700">
+| <img src="https://github.com/edreisMD/HandsOnAIJPR2022/blob/main/Imagens/over_under_sampling.png" width="700"> |
 
-Fonte: https://towardsdatascience.com/a-visual-explanation-of-gradient-descent-methods-momentum-adagrad-rmsprop-adam-f898b102325c
-
+| Fonte: https://towardsdatascience.com/a-visual-explanation-of-gradient-descent-methods-momentum-adagrad-rmsprop-adam-f898b102325c |
+| --------------------------|
 
 #### Passo 9: Repita os passos 3 a 7 utilizando agora o [arquivo Experimento 3](https://github.com/edreisMD/HandsOnAIJPR2022/blob/main/Experimentos/experiment3.tm)
 
