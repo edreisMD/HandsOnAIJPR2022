@@ -115,8 +115,6 @@ Com isso, deve surgir uma nova mini-aba lateral e a sua tela deve estar parecida
 
 <img src="https://github.com/edreisMD/HandsOnAIJPR2022/blob/main/Imagens/Passo6.png" width="700">
 
-Notice that the accuracy is not as good as one may expect from a machine learning model. This is due to the limited number of cases in this experiment (30 normal + 30 hemorrhage)
-
 #### Passo 7: Na nova mini-aba lateral, clique em "Calculate Confusion Matrix"
 
 A sua tela deve estar parecida com esta:
@@ -124,6 +122,12 @@ A sua tela deve estar parecida com esta:
 <img src="https://github.com/edreisMD/HandsOnAIJPR2022/blob/main/Imagens/Passo7.png" width="700">
 
 Observe que a acurácia não é tão boa quanto se pode esperar. Isto se deve ao fato do baixo número de casos no experimento (30 normais + 30 com hemorragia)
+
+#### Passo 8: Vamos ver como a rede se sai em uma imagem 
+
+Pegue uma imagem de "hemorragia intracraniana" ou "TC de cranio normal" no google e salve no seu computador, em seguida na aba "Preview", escolha "Input -> File" e arraste a imagem que você salvou no seu computador para esta aba.
+
+Veja como a rede se sai ao longo dos experimentos.
 
 #### Passo 8: Repita os passos 3 a 7 utilizando agora o [arquivo do Experimento 2](https://github.com/edreisMD/HandsOnAIJPR2022/blob/main/Experimentos/experiment2.tm)
 
