@@ -33,7 +33,7 @@ Inteligência artificial (IA) se referem de forma genérica a programas de compu
 #### O que é uma Rede Neural Convolucional (CNN)?
 As CNNs são modelos inspirados na biologia do córtex visual dos mamíferos. D. H. Hubel e T. N. Wiesel propuseram uma explicação para a maneira como os mamíferos percebem visualmente o mundo ao seu redor usando uma arquitetura em camadas de neurônios no cérebro, e isso, por sua vez, inspirou os engenheiros a tentar desenvolver mecanismos semelhantes de reconhecimento de padrões na visão computacional.
 
-![Visual Cortex](https://github.com/edreisMD/handsonfigs/blob/master/visualcortex2.jpg)
+![Visual Cortex](https://github.com/edreisMD/handsonfigs/blob/master/visualcortex2.jpg|width=100px)
 
 Fonte: https://colocar
 
