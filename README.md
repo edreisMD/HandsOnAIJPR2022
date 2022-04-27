@@ -185,6 +185,6 @@ Legenda: Normal / Intraparenquimatoso / Subdural
 
 ### Parabéns você treinou a sua primeira rede neural!
 
-<img src="https://i.gifer.com/11gv.gif">
+<img src="https://media.giphy.com/media/RWSuqBwzgQU2A/giphy.gif">
 
-Fonte: https://gifer.com
+Fonte: https://giphy.com
