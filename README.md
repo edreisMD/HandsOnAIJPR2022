@@ -49,7 +49,7 @@ Através de uma matriz de números estrategicamente orientados.
 
 Considere cada imagem como uma matriz em que o valor de cada pixel corresponde a um número que determina o tom de cinza da imagem
 
-<img src="https://github.com/edreisMD/handsonfigs/blob/master/8_digits.gif" width="500">
+<img src="https://github.com/edreisMD/handsonfigs/blob/master/8_digits.gif" width="300">
 
 Fonte: https://colocar
 
