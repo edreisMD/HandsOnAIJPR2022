@@ -172,5 +172,5 @@ Neste experimento nós também estamos treinando um modelo multiclasse com 3 cla
 
 <img src="https://github.com/edreisMD/HandsOnAIJPR2022/blob/main/Imagens/hemorragia_cor.png" width="400">
 
-Legenda: Normal / intraparenquimatoso / Subdural
+Legenda: Normal / Intraparenquimatoso / Subdural
 
