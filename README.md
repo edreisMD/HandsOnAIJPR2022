@@ -140,7 +140,7 @@ Oversampling e Undersampling são técnicas para criar ou remover dados artifici
 * Oversampling: Aumentar a amostra da classe minoritária.
 * Undersampling: Reduzir a amostra da classe majoritária.
 
-<img src="https://github.com/edreisMD/HandsOnAIJPR2022/blob/main/Imagens/over_under_sampling.png" width="700">
+<img src="https://github.com/edreisMD/HandsOnAIJPR2022/blob/main/Imagens/over_under_sampling.png" width="500">
 
 Fonte: https://towardsdatascience.com/a-visual-explanation-of-gradient-descent-methods-momentum-adagrad-rmsprop-adam-f898b102325c
 
