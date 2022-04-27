@@ -131,7 +131,7 @@ A sua tela deve estar parecida com esta:
 
 <img src="https://github.com/edreisMD/HandsOnAIJPR2022/blob/main/Imagens/Passo8.png" width="700">
 
-Veja como a rede se sai ao longo dos experimentos. Ela terá diferentes performances, devendo se sair melhor no experimento 3 em que o nosso *dataset* tem um número maior de imagens. Mas fique atento pois cada experimento aboradará um conceito diferente!
+Veja como a rede se sai ao longo dos experimentos. Ela terá diferentes performances, devendo se sair melhor no experimento 3 em que o nosso *dataset* tem um número maior de imagens. Mas fique atento pois em cada experimento aboradaremos um conceito diferente!
 
 #### Passo 9: Repita os passos 3 a 8 utilizando agora o [arquivo do Experimento 2](https://github.com/edreisMD/HandsOnAIJPR2022/blob/main/Experimentos/experiment2.tm)
 
