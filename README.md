@@ -93,7 +93,7 @@ Você deve ver este site:
 
 <img src="https://github.com/edreisMD/HandsOnAIJPR2022/blob/main/Imagens/Passo1.png" width="700">
 
-#### Passo 2: Baixe o [arquivo do Experimento 1](https://github.com/edreisMD/HandsOnAIJPR2022/blob/main/Experimentos/experiment1.tm) em um local que será fácil para encontrar depois
+#### Passo 2: Baixe o arquivo [Experimento 1](https://github.com/edreisMD/HandsOnAIJPR2022/blob/main/Experimentos/experiment1.tm) em um local que será fácil para encontrar depois
 
 #### Passo 3: Clique em "Teachable Machine" no canto superior esquerdo e depois em "Open project from file", como abaixo:
 
@@ -133,7 +133,7 @@ A sua tela deve estar parecida com esta:
 
 Veja como a rede se sai ao longo dos experimentos. Ela terá diferentes performances, devendo se sair melhor no experimento 3 em que o nosso *dataset* tem um número maior de imagens. Mas fique atento pois em cada experimento aboradaremos um conceito diferente!
 
-#### Passo 9: Repita os passos 3 a 8 utilizando agora o [arquivo do Experimento 2](https://github.com/edreisMD/HandsOnAIJPR2022/blob/main/Experimentos/experiment2.tm)
+#### Passo 9: Repita os passos 3 a 8 utilizando agora o arquivo [Experimento 2](https://github.com/edreisMD/HandsOnAIJPR2022/blob/main/Experimentos/experiment2.tm)
 
 O seu resultado deve ser parecido com este:
 
@@ -154,7 +154,7 @@ Oversampling e Undersampling são técnicas para criar ou remover dados artifici
 
 Fonte: https://towardsdatascience.com/a-visual-explanation-of-gradient-descent-methods-momentum-adagrad-rmsprop-adam-f898b102325c
 
-#### Passo 10: Repita os passos 3 a 8 utilizando agora o [arquivo Experimento 3](https://github.com/edreisMD/HandsOnAIJPR2022/blob/main/Experimentos/experiment3.tm)
+#### Passo 10: Repita os passos 3 a 8 utilizando agora o arquivo [Experimento 3](https://github.com/edreisMD/HandsOnAIJPR2022/blob/main/Experimentos/experiment3.tm)
 
 O seu resultado deve ser parecido com este:
 
@@ -162,7 +162,7 @@ O seu resultado deve ser parecido com este:
 
 Observe que a acurácia é menor do que no último experimento. No entanto, a matriz de confusão demonstra que a maioria dos casos “positivos” passaram a ser classificados corretamente, apesar de não estar perfeito. Neste experimento nosso dataset foi balanceado (1000 normais + 1000 com hemorragia)
 
-#### Passo 11: Repita os passos 3 a 8 utilizando agora o [arquivo Experimento 4](https://github.com/edreisMD/HandsOnAIJPR2022/blob/main/Experimentos/experiment4.tm)
+#### Passo 11: Repita os passos 3 a 8 utilizando agora o arquivo [Experimento 4](https://github.com/edreisMD/HandsOnAIJPR2022/blob/main/Experimentos/experiment4.tm)
 
 O seu resultado deve ser parecido com este:
 
@@ -170,7 +170,7 @@ O seu resultado deve ser parecido com este:
 
 Neste experimento nós estamos treinando um modelo multiclasse para classificar em apenas 1 de 3 classes possíveis (normal, subdural, intraparenquimatoso). Devido ao número limitado de imagens de cada classe (80) para manter o balanceamento, a acurácia não foi satisfatória
 
-#### Passo 12: Repita os passos 3 a 8 utilizando agora o [arquivo Experimento 5](https://github.com/edreisMD/HandsOnAIJPR2022/blob/main/Experimentos/experiment5.tm)
+#### Passo 12: Repita os passos 3 a 8 utilizando agora o arquivo [Experimento 5](https://github.com/edreisMD/HandsOnAIJPR2022/blob/main/Experimentos/experiment5.tm)
 
 O seu resultado deve ser parecido com este:
 
