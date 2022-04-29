@@ -125,7 +125,7 @@ Observe que a acurácia não é tão boa quanto se pode esperar. Isto se deve ao
 
 #### Passo 8: Vamos ver como a rede se sai em uma imagem 
 
-Pegue uma imagem de "hemorragia intracraniana" ou "TC de cranio normal" no google e salve no seu computador, em seguida na aba "Preview", escolha "Input -> File" e arraste a imagem que você salvou no seu computador para esta aba.
+Pegue uma imagem de "hemorragia intracraniana" ou "TC de cranio normal" no google e salve no seu computador. Feche a mini-aba "Under the hood" e, em seguida na aba "Preview", escolha "Input -> File" e arraste a imagem que você salvou no seu computador para esta aba.
 
 A sua tela deve estar parecida com esta:
 
@@ -135,7 +135,7 @@ Veja como a rede se sai ao longo dos experimentos. Ela terá diferentes performa
 
 #### Passo 9: Repita os passos 3 a 8 utilizando agora o [arquivo do Experimento 2](https://github.com/edreisMD/HandsOnAIJPR2022/blob/main/Experimentos/experiment2.tm)
 
-A sua tela deve estar parecida com esta:
+O seu resultado deve ser parecido com este:
 
 <img src="https://github.com/edreisMD/HandsOnAIJPR2022/blob/main/Imagens/Passo9.png" width="700">
 
@@ -156,7 +156,7 @@ Fonte: https://towardsdatascience.com/a-visual-explanation-of-gradient-descent-m
 
 #### Passo 10: Repita os passos 3 a 8 utilizando agora o [arquivo Experimento 3](https://github.com/edreisMD/HandsOnAIJPR2022/blob/main/Experimentos/experiment3.tm)
 
-A sua tela deve estar parecida com esta:
+O seu resultado deve ser parecido com este:
 
 <img src="https://github.com/edreisMD/HandsOnAIJPR2022/blob/main/Imagens/Passo10.png" width="700">
 
@@ -164,7 +164,7 @@ Observe que a acurácia é menor do que no último experimento. No entanto, a ma
 
 #### Passo 11: Repita os passos 3 a 8 utilizando agora o [arquivo Experimento 4](https://github.com/edreisMD/HandsOnAIJPR2022/blob/main/Experimentos/experiment4.tm)
 
-A sua tela deve estar parecida com esta:
+O seu resultado deve ser parecido com este:
 
 <img src="https://github.com/edreisMD/HandsOnAIJPR2022/blob/main/Imagens/Passo11.png" width="700">
 
@@ -172,7 +172,7 @@ Neste experimento nós estamos treinando um modelo multiclasse para classificar 
 
 #### Passo 12: Repita os passos 3 a 8 utilizando agora o [arquivo Experimento 5](https://github.com/edreisMD/HandsOnAIJPR2022/blob/main/Experimentos/experiment5.tm)
 
-A sua tela deve estar parecida com esta:
+O seu resultado deve ser parecido com este:
 
 <img src="https://github.com/edreisMD/HandsOnAIJPR2022/blob/main/Imagens/Passo12.png" width="700">
 
