@@ -9,7 +9,7 @@ Este é o passo a passo para o curso Hands On de Inteligência Artificial em Rad
 
 ### Acknowledgements
 
-This lecture was inspired in Luciano, Errol e Tara presentation at ______ (RSNA 2021?)
+This lecture was inspired in Luciano, Errol e Tara presentation at RSNA 2021.
 
 Esta atividade é baseada na "RSNA Spotlight Course 2021 AI Implementation: Building Expertise and Influence''. Session From Theory to Practice: Live Demonstration", realizada por Luciano M. Prevedello e Felipe C. Kitamura.
 
