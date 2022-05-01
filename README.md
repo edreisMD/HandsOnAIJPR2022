@@ -51,13 +51,13 @@ Considere cada imagem como uma matriz em que o valor de cada pixel corresponde a
 
 <img src="https://github.com/edreisMD/handsonfigs/blob/master/8_digits.gif" width="300">
 
-Fonte: https://colocar
+Fonte: https://medium.com/@ageitgey/machine-learning-is-fun-part-3-deep-learning-and-convolutional-neural-networks-f40359318721
 
 Portanto, para enxergar os contornos de uma imagem nosso algoritmo vai tentar criar filtros que representem estes contornos em números, como no exemplo abaixo.
 
 <img src="https://github.com/edreisMD/handsonfigs/blob/master/Screen-Shot-2017-07-26-at-6.13.41-PM.png" width="400">
 
-Fonte: https://colocar
+Fonte: https://www.jeremyjordan.me/convolutional-neural-networks/
 
 Veja como esses filtros numéricos  vão percorrer toda a imagem para enxergar os contornos:
 
