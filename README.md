@@ -63,7 +63,7 @@ Veja como esses filtros numéricos  vão percorrer toda a imagem para enxergar o
 
 <img src="https://github.com/edreisMD/handsonfigs/blob/master/ConvRun.gif" width="400">
 
-Fonte: https://colocar
+Fonte: https://medium.com/mlearning-ai/feature-extraction-using-convolution-1576d9abe07f
 
 E repetiremos essa operação várias vezes para nossa rede enxergar características cada vez mais complexas, gerando filtros de contornos.
 
