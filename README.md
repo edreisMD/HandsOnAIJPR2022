@@ -35,7 +35,7 @@ As CNNs são modelos inspirados na biologia do córtex visual dos mamíferos. D.
 
 <img src="https://github.com/edreisMD/handsonfigs/blob/master/visualcortex2.jpg" width="500">
 
-Fonte: https://colocar
+Fonte: https://neuwritesd.org/2015/10/22/deep-neural-networks-help-us-read-your-mind/
 
 
 #### Construindo a arquitetura da Rede Neural Convolucional
